@@ -17,14 +17,16 @@
 import { RouterLink, RouterView } from 'vue-router'
 </script>
 
+
+
 <style>
 body {
-  background-color: lightblue; 
-  margin: 0; 
+  background-color: lightblue;
+  margin: 0;
 }
 
 #app {
-  height: 100vh; 
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -35,32 +37,34 @@ header {
 }
 
 nav {
-  height: 50%;
-  width: 50%;
-  display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  border-radius: 10px;
-  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
 }
-
 
 nav a.router-link-exact-active {
   font-weight: bold;
 }
 
 nav a:hover {
-  background-color: #3498db; /* Changer la couleur de fond au survol */
+  background-color: #3498db;
 }
 
 nav a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
-  
-  font-size: 50px;
   text-decoration: none;
-  color: black; 
+  color: black;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin-bottom: 10px;
+  }
 }
 </style>

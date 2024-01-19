@@ -27,7 +27,7 @@ export const useJournalStore = defineStore('phone', {
                 nom: 'Hugo Bernard',
                 date: "2021-10-16 20:05:12",
             },
-            // Ajoutez d'autres contacts au besoin
+            
         ],
     }),
     actions: {

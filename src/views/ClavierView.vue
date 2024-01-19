@@ -109,6 +109,7 @@ export default {
     </div>
   </div>
 </template>
+
 <style scoped>
 .clavier-global-conteneur {
   border: 3px solid #3498db;
