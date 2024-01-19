@@ -24,7 +24,7 @@ const router = createRouter({
       component: ClavierView
     },
     {
-      path: '/addcontact',
+      path: '/addContact',
       name: 'addContact',
       component: AddContactView
     },
