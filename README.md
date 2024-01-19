@@ -24,4 +24,3 @@ Cette application Téléphone permet de composer des numéros à l'aide d'un cla
 ## Technologies Utilisées
 - Vue.js : Framework JavaScript pour la construction de l'interface utilisateur.
 - Pinia : Gestion d'état dans l'application.
-- Autres dépendances (à lister si nécessaire).
