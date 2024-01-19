@@ -8,7 +8,7 @@ import contact from '../components/contact.vue'
     },
     methods:{
         adds(){
-            window.location.href = "/addcontact"
+            window.location.href = "/addContact"
         }
     }
 }
