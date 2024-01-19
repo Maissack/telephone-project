@@ -2,7 +2,7 @@
 import { useAddContactStore } from '@/stores/addContact'
 
 export default {
-  name: 'addContact',
+  name: 'addcontact',
   setup() {
     const personneStore = useAddContactStore()
 
