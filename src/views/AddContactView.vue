@@ -69,6 +69,7 @@ export default {
   h2 {
     font-size: 18px;
     margin-bottom: 5px;
+    color: black;
   }
 
   input {
@@ -78,6 +79,7 @@ export default {
     border: 2px solid #3498db;
     width: 100%;
     box-sizing: border-box;
+    font-size: 16px;
   }
 
   button {

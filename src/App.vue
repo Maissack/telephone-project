@@ -7,6 +7,7 @@
         <RouterLink to="/">Journal</RouterLink>
         <RouterLink to="/contact">Contact</RouterLink>
         <RouterLink to="/clavier">Clavier</RouterLink>
+        <RouterLink to="/addcontact">Ajouter un contact</RouterLink>
       </nav>
     </header>
     <RouterView />

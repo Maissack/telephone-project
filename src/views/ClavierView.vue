@@ -127,6 +127,7 @@ export default {
 
 .number-input {
   width: 70%;
+  height: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,17 +137,15 @@ export default {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
+  color: black;
+  font-size: 20px;
+  
 }
 
 
 
 
-.number {
-  width: 100%;
-  height: 30px;
-  border: 3px solid #3498db;
-  font-size: 18px;
-}
+
 
 .error-message {
   color: #e74c3c;
@@ -180,7 +179,7 @@ export default {
 }
 
 .number-inputed:hover {
-  background-color: #2c3e50;
+  background-color: #1d2935;
 }
 
 .clavier-second-content img {
