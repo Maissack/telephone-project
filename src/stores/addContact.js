@@ -1,26 +1,34 @@
 import { defineStore } from "pinia";
 
 export const useAddContactStore = defineStore('personne', {
-    state: () => ({
-        personnes: [
+    state: () => {
+        
+        const contactsExistants = JSON.parse(localStorage.getItem('contacts')) || [];
+
+        
+        const nouveauxContacts = [
             {
-                nom: 'Nelson',
-                number: '07 44 78 40 12'
+                nom: 'John',
+                number: '07 12 34 56 78'
             },
             {
-                nom: 'Luc',
-                number: '06 46 67 23 12'
-            },
-            {
-                nom: 'Philippe',
-                number: '07 20 11 89 44'
-            },
+                nom: 'Alice',
+                number: '06 98 76 54 32'
+            }
             
-        ],
-    }),
+        ];
+
+        // Fusionner les contacts existants avec les nouveaux
+        const personnes = [...contactsExistants, ...nouveauxContacts];
+
+        return {
+            personnes,
+        };
+    },
     actions: {
         ajoutPersonne(personne) {
             this.personnes.push(personne);
+            localStorage.setItem('contacts', JSON.stringify(this.personnes));
         }
     }
 });
