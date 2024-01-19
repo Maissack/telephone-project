@@ -22,7 +22,6 @@ export default{
     <div class="journal-single" v-for="call in calls">
       <h2>{{ call.nom }}</h2>
       <p>{{ call.date }}</p>
-      <img src="../assets/appel-icon.png" alt="appel icon">
     </div>
 </template>
 
